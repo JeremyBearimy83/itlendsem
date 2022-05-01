@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    {% for blog in blogs %}
+        <div>
+            {{blog.name}}
+            </div>
+    {% endfor %}
+
+    <form action="/createBlog/" method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
