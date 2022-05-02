@@ -1,3 +1,3 @@
 # itlendsem
 
-###Purly for educational purposes
+### Purly for educational purposes
